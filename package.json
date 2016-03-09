@@ -4,7 +4,7 @@
   "description": "An web application that can manage your expense,especially withn a group, in your trip",
   "main": "index.js",
   "scripts": {
-  	"start": "webpack --progress --colors --watch |node server.js",
+    "start": "webpack --progress --colors --watch |node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Chen Gong",
@@ -22,6 +22,7 @@
     "pg": "^4.4.1",
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.5.1",
+    "serve-favicon": "^2.3.0",
     "sqlite3": "^3.1.1",
     "underscore": "^1.8.3",
     "whatwg-fetch": "^0.9.0"

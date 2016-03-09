@@ -5,7 +5,7 @@
     <th>Description</th>
     <th>Money Spent</th>
   </tr>
-  <tr ng-repeat="record in system.records | orderBy:'name'">
+  <tr ng-repeat="record in records | orderBy:'name'">
     <td >{{record.name}}</td>
     <td >{{record.description}}</td>
     <td >{{record.money}}</td>

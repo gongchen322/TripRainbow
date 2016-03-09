@@ -18,11 +18,18 @@
         }; 
         $http(req).success(function(data, status) {
             console.log("Successfully save data");
-            $state.go('home');         
+           var req = {
+              method: 'GET',
+              url: '/data',
+        }; 
+        $http(req).success(function(data, status) {
+            console.log("Successfully get data");
+            $scope.records = data;     
+          });      
           });       
       }
 
-      $scope.setData = function () {
+      $scope.setData = (function () {
          var req = {
               method: 'GET',
               url: '/data',
@@ -31,7 +38,7 @@
             console.log("Successfully get data");
             $scope.records = data;     
           });  
-      }
+      })();
     };
 
     costController.$inject = ['$scope','$http','$state','dataService'];
