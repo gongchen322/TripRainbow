@@ -1,9 +1,8 @@
 var Sequelize = require('sequelize');
 var env = process.env.NODE_ENV || 'development';
 var sequelize;
-process.env.DATABASE_URL="";
 if (env === 'production') {
-	sequelize = new Sequelize(process.env.DATABASE_URL, {
+	sequelize = new Sequelize(HEROKU_POSTGRESQL_RED_URL, {
 		dialect: 'postgres'
 	});
 } else {
