@@ -81,7 +81,7 @@ body {
   }
 }
 .rwd-table th, .rwd-table td:before {
-  color: #dd5;
+  color: gold;
 }
 
 
@@ -103,7 +103,7 @@ body {
 }
 #pricing-table {
   padding-top: 50px;
-  width:300px;
+  width:400px;
   height:500px;
   margin-right: auto;
   margin-left:auto;
@@ -125,7 +125,7 @@ body {
   border-top-left-radius: 4px;
 }
 #pricing-table .pricing .pricing-table .pricing-header .pricing-title {
-  color: #ffffff;
+  color: gold;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 24px;
@@ -139,17 +139,8 @@ body {
   position: relative;
   text-align: center;
 }
-#pricing-table .pricing .pricing-table .pricing-header .pricing-rate sup {
-  font-size: 24px;
-  position: relative;
-  top: -30px;
-  color: #bdc3c7;
-}
-#pricing-table .pricing .pricing-table .pricing-header .pricing-rate span {
-  font-size: 16px;
-  color: #bdc3c7;
-  text-transform: uppercase;
-}
+
+
 #pricing-table .pricing .pricing-list {
   padding: 20px 0 40px 0;
   background: #ffffff;
@@ -167,6 +158,9 @@ body {
   font-size: 16px;
   line-height: 42px;
 }
+#pricing-table .pricing .pricing-list input {
+  width:200px;
+}
 #pricing-table .pricing .pricing-list ul li:last-child {
   border: none;
 }
@@ -176,4 +170,8 @@ body {
 }
 #pricing-table .pricing .pricing-list ul li span {
   color: #34495e;
+}
+
+#addButton {
+  text-align: center;
 }

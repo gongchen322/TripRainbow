@@ -55,7 +55,8 @@
 	        // HOME STATES 
 	        .state('home', {
 	            url: '/home',
-	            templateUrl: 'js/view/partial-home.html'
+	            templateUrl: 'js/view/partial-home.html',
+	            controller: 'costController'
 	        })
 	        
 	});

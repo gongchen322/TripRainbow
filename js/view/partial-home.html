@@ -5,10 +5,10 @@
     <th>Description</th>
     <th>Money Spent</th>
   </tr>
-  <tr>
-    <td data-th="Movie Title">Star Wars</td>
-    <td data-th="Genre">Adventure, Sci-fi</td>
-    <td data-th="Gross">$460,935,665</td>
+  <tr ng-repeat="record in system.records | orderBy:'name'">
+    <td >{{record.name}}</td>
+    <td >{{record.description}}</td>
+    <td >{{record.money}}</td>
   </tr>
 
 </table>
@@ -16,28 +16,30 @@
 
 <section id="pricing-table">
     <div class="container">
-        
-            <div class="pricing">
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="pricing-table">
-                        <div class="pricing-header">
-                            <p class="pricing-title">Add your cost to the system</p>
-                        </div>
-
-                        <div class="pricing-list">
-                        <ul>
-                            <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Name</li>
-                            <input type="text" placeholder="E.g Fenny " required="" ng-model="name"  />
-                            <li><span class="glyphicon glyphicon-text-background" aria-hidden="true"></span>Description</li>
-                            <input type="text" placeholder="E.g Hotel charge at Langham" required="" ng-model="name"  />
-                            <li><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>Money Spent</li>
-                            <input type="text" placeholder="E.g $850" required="" ng-model="name"  />
-                            
-                        </ul>
+        <div class="pricing">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="pricing-table">
+                    <div class="pricing-header">
+                        <p class="pricing-title">Add your cost to the system</p>
                     </div>
+
+                    <div class="pricing-list">
+                    <ul>
+                        <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Name</li>
+                        <input type="text" placeholder="E.g Fenny " required="" ng-model="name"  />
+                        <li><span class="glyphicon glyphicon-text-background" aria-hidden="true"></span>Description</li>
+                        <input type="text" placeholder="E.g Hotel charge at Langham" required="" ng-model="description"  />
+                        <li><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>Money Spent</li>
+                        <input type="text" placeholder="E.g $850" required="" ng-model="money"  />
+                        
+                    </ul>
+                    <br>
+                    <div id="addButton">
+                        <button ng-click="addToSystem()">Add to System</button>
+                    </div>
+                    
                 </div>
             </div>
-
-        
+        </div>   
     </div>
 </section>
