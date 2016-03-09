@@ -1,18 +1,46 @@
-<section id="tripInfo">
+<div id="tripInfo">
     <table class="rwd-table" width="700">
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Money Spent</th>
-  </tr>
-  <tr ng-repeat="record in records | orderBy:'name'">
-    <td >{{record.name}}</td>
-    <td >{{record.description}}</td>
-    <td >{{record.money}}</td>
-  </tr>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Money Spent</th>
+      </tr>
+      <tr ng-repeat="record in records | orderBy:'name'">
+        <td >{{record.name}}</td>
+        <td >{{record.description}}</td>
+        <td >{{record.money}}</td>
+      </tr>
 
-</table>
-</section>
+    </table>
+        <table class="rwd-table" width="700">
+      <tr>
+        <th>Total Cost</th>
+        <th>Number of people</th>
+        <th>Average</th>
+      </tr>
+      <tr >
+        <td >{{total}}</td>
+        <td >{{population}}</td>
+        <td >{{average}}</td>
+      </tr>
+
+    </table>
+    <table class="rwd-table sumTable" width="700">
+      <tr>
+        <th>Name</th>
+        <th>Money Spent</th>
+        <th>Average</th>
+        <th>Need to pay</th>
+      </tr>
+      <tr ng-repeat="(name, money) in individualCosts | orderBy:'name'">
+        <td >{{name}}</td>
+        <td >{{money}}</td>
+        <td >{{average}}</td>
+        <td >{{average-money}}</td>
+      </tr>
+
+    </table>
+</div>
 
 <section id="pricing-table">
     <div class="container">

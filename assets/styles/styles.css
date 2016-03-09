@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
 body {
-	background: url('http://cdn.paper4pc.com/images/cute-wallpaper-21.jpg') center ; 
+	background: url('/assets/rainbow.jpg') center no-repeat; 
 }
 
 /*Trip cost information*/
@@ -10,7 +10,12 @@ body {
 	width:700px;
 	margin-right: auto;
 	margin-left:auto;
+  width:40%;
+  height:100%;
+  float:left;
+
 }
+
 
 .rwd-table {
   margin: 1em 0;
@@ -102,6 +107,7 @@ body {
   border: 1px solid #ffffff;
 }
 #pricing-table {
+  
   padding-top: 50px;
   width:400px;
   height:500px;
