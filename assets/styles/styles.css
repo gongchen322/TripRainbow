@@ -2,7 +2,13 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
 body {
-	background: url('/assets/rainbow.jpg') center no-repeat; 
+	background: url('/assets/rainbow.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    margin:0;
+    height:100%;
 }
 
 /*Trip cost information*/
@@ -13,6 +19,7 @@ body {
   width:40%;
   height:100%;
   float:left;
+  padding-left:2%;
 
 }
 
@@ -94,9 +101,6 @@ body {
 
 
 /*Individual cost*/
-.container {
-	width:1000px;
-}
 .btn-custom {
   color: #bdc3c7;
   font-size: 18px;
@@ -107,13 +111,21 @@ body {
   border: 1px solid #ffffff;
 }
 #pricing-table {
-  
   padding-top: 50px;
-  width:400px;
-  height:500px;
+  width:60%;
+  height:100%;
   margin-right: auto;
-  margin-left:auto;
+  margin-left:40%;
 }
+
+
+.panel {
+  width:30%;
+  height:50%;
+  margin-left:20%;
+  margin-top:10%;
+}
+
 #pricing-table .pricing {
   marign: 0;
   padding: 0;
